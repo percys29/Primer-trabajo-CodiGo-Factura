@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi factura</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/factura.js"></script>
+	<style type="text/css">
+	.izquierda {
+		left: 0;
+		background-color: #76c8FF  ;
+		height: 100%;
+		width: 50%;
+		position: fixed;
+	}
+	.derecha{
+		right: 0;
+		background-color: #82FFEE  ;
+		height: 100%;
+		width: 50%;
+		position: fixed;
+		}
+		.tabla{
+			margin-left: 50px;
+			margin-top: 50px;
+		}		
+	</style>
+</head>
+<body>
+	<h1>La Tiendita de Don Pepe</h1>
+	<hr>
+	<div class="dividir izquierda">
+		<form onsubmit="return false;">
+			<label>Productos</label>
+			<select id="select">
+				<option>Celular Samnsung galaxy</option>
+				<option>Celular Samnsung galaxy</option>
+				<option>Celular Samnsung galaxy</option>
+				<option>Celular Samnsung galaxy</option>
+			</select>
+			<br>
+			<label>Cantidad</label>
+			<input type="number" id="inputCantidad" min = "0">
+			<br>
+			<label>precio unitario</label>
+			<input type="number" id="inputPUnitario" min = "0">
+			<br>
+			<label>precio total</label>
+			<input type="number" name="" disabled="" id="inputTotal">
+			<br>
+			<button id="btnAgregar" ;">Agregar</button>
+		</form>
+		
+	</div>
+	<div class="dividir derecha">
+		<table border="1px" class="tabla" id="miTabla">
+			<tr>
+				<th>Producto</th>
+				<th>Cantidad</th>
+				<th>Precio Unitario</th>
+				<th>toltal</th>
+			</tr>
+		</table>
+		
+	</div>
+	
+</body>
+</html>
